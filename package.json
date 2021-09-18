@@ -1,0 +1,32 @@
+{
+  "name": "my-wave-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-run": "ts-node --files scripts/run.ts",
+    "deploy": "ts-node --files scripts/deploy.ts",
+    "deploy-localhost": "npx hardhat run scripts/deploy.ts --network localhost",
+    "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.6.4"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.9.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
